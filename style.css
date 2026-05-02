@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+  background-color: white;
+  max-width: 345px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 24px;
+  margin-block: 100px;
+  border: solid 1px black;
+  box-shadow: 5px 5px 0px black;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease-in-out;
+  &:hover {
+    transform: translate3d(-5px, -5px, 0);
+    box-shadow: 10px 10px 0px black;
+  }
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+#learning {
+  display: inline-block;
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+  padding-block: 6px;
+  padding-inline: 14px;
+  margin-top: 16px;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+.card p + p {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.card h1 {
+  text-wrap: nowrap;
+  width: 100%;
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin-block: 16px;
+  padding-right: 20px;
+  &:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+  }
+}
+
+.card h1 + p {
+  color: hsl(0, 0%, 42%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  img {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  p {
+    font-size: 0.9rem;
+    background-color: none;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover {
+      color: hsl(47, 88%, 63%);
+    }
+  }
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: hsl(0, 0%, 42%);
+  }
+  font-weight: 600;
+  color: hsla(0, 0%, 42%, 0.563);
+}
