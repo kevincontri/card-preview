@@ -15,7 +15,8 @@ body {
   margin-inline: auto;
   padding: 20px;
   border-radius: 24px;
-  margin-block: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   border: solid 1px black;
   box-shadow: 5px 5px 0px black;
   transform: translate3d(0, 0, 0);
@@ -91,11 +92,54 @@ body {
 .attribution {
   font-size: 0.7rem;
   text-align: center;
-
   a {
     text-decoration: none;
     color: hsl(0, 0%, 42%);
   }
   font-weight: 600;
   color: hsla(0, 0%, 42%, 0.563);
+}
+
+#toggle {
+  display: block;
+  margin-inline: auto;
+  margin-block: 0 20px;
+  padding: 10px 20px;
+  background-color: #071e40;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  &:hover {
+    background-color: #164181;
+  }
+}
+
+.dark-theme-bg {
+  background-color: #071e40 !important;
+}
+
+.dark-theme-learning {
+  color: white !important;
+  background-color: #071e40 !important;
+}
+
+.dark-theme-text {
+  color: #071e40 !important;
+  &:hover {
+    color: #13376d !important;
+    cursor: pointer;
+  }
+}
+
+.dark-theme-button {
+  background-color: #164181 !important;
+  color: white !important;
+  &:hover {
+    background-color: #071e40 !important;
+  }
 }
