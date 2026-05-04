@@ -8,8 +8,6 @@ let button = document.getElementById("toggle")
 function toggleTheme() {
   bg[0].classList.toggle("dark-theme-bg")
 
-  img.src = "./assets/dark-illustration.png"
-
   learning.classList.toggle("dark-theme-learning")
 
   title.classList.toggle("dark-theme-text")
@@ -18,4 +16,12 @@ function toggleTheme() {
 
   button.classList.toggle("dark-theme-button")
 
+  const toggleImage = () => {
+    if (img.src.includes("illustration-article.svg")) {
+      img.src = "./assets/dark-illustration.png"
+    } else {
+      img.src = "./assets/illustration-article.svg"
+    }
+  }
+  toggleImage()
 }
