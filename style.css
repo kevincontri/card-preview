@@ -7,6 +7,11 @@
 
 body {
   background-color: hsl(47, 88%, 63%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -15,8 +20,7 @@ body {
   margin-inline: auto;
   padding: 20px;
   border-radius: 24px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: solid 1px black;
   box-shadow: 5px 5px 0px black;
   transform: translate3d(0, 0, 0);
